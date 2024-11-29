@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive; /* Arcade-style font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34; /* Dark background for contrast */
+  height: 100vh;
+  color: #ffffff;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Space between the sidebar and the board */
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: #444; /* Darker sidebar */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.game-board {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff; /* White background for the game board */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.packmanHealth {
+  margin-bottom: 20px;
+}
+
+h1.board {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Bright color for the title */
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #ffcc00; /* Bright color for headings */
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0; /* Light background for inputs */
+  color: #333; /* Dark text for readability */
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  width: 640px;
+  height: 480px;
+  position: relative;
+  margin: auto;
+  border: 2px solid #ffcc00; /* Border around the game grid */
+  border-radius: 8px;
+  background-color: #222; /* Dark background for the grid */
+}
+
+.cell {
+  border: 1px solid #000;
+  width: 40px;
+  height: 30px;
+  position: relative;
+  background-color: rgb(17, 17, 17);
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cell:hover {
+  background-color: #ffcc00; /* Highlight cell on hover */
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

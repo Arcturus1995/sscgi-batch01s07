@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Pacman Game</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Ghost health section -->
+      <div id="ghosts-health" class="sidebar">
+        <h2>Ghost Health</h2>
+        <div id="ghosts-list"></div>
+        <!-- Dynamic list of ghost health -->
+      </div>
+
+      <!-- Game Board (Pacman health and grid) -->
+      <div class="game-board">
+        <h1 class="board">Pacman Game</h1>
+
+        <div id="grid" class="packmanHealth">
+          <h2>Pacman Health</h2>
+          <label for="health">Health:</label>
+          <input type="text" id="pacman-health" class="health" disabled />
+          <label for="Power">Power:</label>
+          <input type="number" id="pacman-power" class="power" disabled />
+        </div>
+
+        <div class="container2" id="container2"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
